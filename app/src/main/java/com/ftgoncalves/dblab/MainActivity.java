@@ -29,9 +29,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         runInserts.setOnClickListener(this);
     }
 
-
     @Override
     public void onClick(View view) {
+
+        //11-08 08:21:58.367 13471-13471/com.ftgoncalves.dblab D/com.ftgoncalves.dblab.MainActivity: START: 1478600518367
+        //11-08 08:26:30.872 13471-13471/com.ftgoncalves.dblab D/com.ftgoncalves.dblab.MainActivity: END: 1478600790872
+        // ==  Segundos 272,505
+        // == Minutos 4,54175
+
+
         Observable.create(new Observable.OnSubscribe<Void>() {
             @Override
             public void call(Subscriber<? super Void> subscriber) {
